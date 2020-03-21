@@ -1,4 +1,4 @@
-# node-ts-backend-api
+# Node with TypeScript Backend-API Project
 
 ## Continuous Integration Step
 
