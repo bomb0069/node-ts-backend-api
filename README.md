@@ -3,6 +3,7 @@
 ## Continuous Integration Step
 
 ### Source Code Build
+> npm run build
 
 ### Run Static Code Analysis
 
