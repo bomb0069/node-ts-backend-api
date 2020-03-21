@@ -4,9 +4,12 @@
 
 ### Source Code Build
 
-> npm run build
+>npm run build
 
 ### Run Static Code Analysis
+
+>npm run lint\
+>npm audit --fix
 
 ### Run Automated Unit Tests
 
