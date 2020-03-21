@@ -13,6 +13,8 @@
 
 ### Run Automated Unit Tests
 
+>npm test
+
 ### Code Coverage Analysis
 
 ### Built Artifact
