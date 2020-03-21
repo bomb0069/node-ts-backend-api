@@ -1,0 +1,19 @@
+{
+  "name": "ts-backend-api",
+  "version": "1.0.0",
+  "description": "Pilot Project for create fully CI/CD based on node.js with typescript project",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bomb0069/node-ts-backend-api.git"
+  },
+  "author": "bomb0069",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bomb0069/node-ts-backend-api/issues"
+  },
+  "homepage": "https://github.com/bomb0069/node-ts-backend-api#readme"
+}
