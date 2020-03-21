@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bomb0069/node-ts-backend-api/issues"
   },
-  "homepage": "https://github.com/bomb0069/node-ts-backend-api#readme"
+  "homepage": "https://github.com/bomb0069/node-ts-backend-api#readme",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
 }
