@@ -17,6 +17,8 @@
 
 ### Code Coverage Analysis
 
+see coverage report in ./coverage
+
 ### Built Artifact
 
 ### Setup Test Fixtures
