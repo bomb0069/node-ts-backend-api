@@ -10,7 +10,7 @@ pipeline {
       }
       stage('Run Static Code Analysis') {
          steps {
-            sh label: '', returnStatus: true, script: '''npm run lint -- --format=checkstyle --output-file=reports/checkstyle.xml
+            sh label: '', returnStatus: true, script: '''npm run lint -- --quiet --format=checkstyle --output-file=reports/checkstyle.xml
             npm audit --fix'''
             recordIssues(tools: [esLint(pattern: 'reports/checkstyle.xml')])
          }
