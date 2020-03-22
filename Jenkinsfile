@@ -13,8 +13,8 @@ pipeline {
             sh label: '', returnStatus: true, script: '''npm run lint -- --quiet --format=checkstyle --output-file=reports/checkstyle.xml'''
             recordIssues(tools: [esLint(pattern: 'reports/checkstyle.xml')])
             sh label: '', returnStatus: true, script: '''npm audit --json'''
-            dependencyCheck additionalArguments: '--out=reports', odcInstallation: 'Node Dependency Checker'
-            dependencyCheckPublisher failedNewCritical: 1, failedNewHigh: 1, failedNewLow: 1, failedNewMedium: 1, failedTotalCritical: 1, failedTotalHigh: 1, failedTotalLow: 1, failedTotalMedium: 1, pattern: 'reports/dependency-check-report.xml'
+            //dependencyCheck additionalArguments: '--out=reports', odcInstallation: 'Node Dependency Checker'
+            //dependencyCheckPublisher failedNewCritical: 1, failedNewHigh: 1, failedNewLow: 1, failedNewMedium: 1, failedTotalCritical: 1, failedTotalHigh: 1, failedTotalLow: 1, failedTotalMedium: 1, pattern: 'reports/dependency-check-report.xml'
          }
       }
       stage('Run Automated Unit Tests') {
