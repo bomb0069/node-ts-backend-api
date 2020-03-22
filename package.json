@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --verbose --coverage",
-    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+    "lint": "tsc --noEmit && eslint '**/*.{js,ts,tsx}' --quiet"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "jest": "^25.1.0",
+    "jest-junit": "^10.0.0",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   }

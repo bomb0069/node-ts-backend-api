@@ -3,6 +3,22 @@ module.exports = {
   transform: {
     '^.+\\.ts?$': 'ts-jest'
   },
+  reporters: [
+    'default',
+    [
+      'jest-junit',
+      {
+        suiteName: 'jest tests',
+        outputDirectory: 'reports',
+        outputName: 'junit.xml',
+        uniqueOutputName: 'false',
+        classNameTemplate: '{classname}-{title}',
+        titleTemplate: '{classname}-{title}',
+        ancestorSeparator: ' › ',
+        usePathForSuiteName: true
+      }
+    ]
+  ],
   collectCoverageFrom: [
     '**/*.{ts,tsx,js,jsx}',
     '!coverage/**',
