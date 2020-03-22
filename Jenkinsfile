@@ -19,6 +19,7 @@ pipeline {
          steps {
             sh label: '', script: 'npm test'
             junit 'reports/junit.xml'
+            recordIssues(tools: [junitParser(pattern: 'reports/junit.xml')])
          }
       }
       stage('Code Coverage Analysis') {
